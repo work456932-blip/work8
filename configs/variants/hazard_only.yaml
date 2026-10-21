@@ -1,0 +1,13 @@
+model:
+  survival_head:
+    enable_cure: false
+    enable_state: false
+train:
+  survival:
+    components:
+      cure: 0.0
+      state: 0.0
+      monotonic: 0.0
+eval:
+  cure_gate: false
+  explicit_refusal: false

@@ -1,0 +1,3 @@
+train:
+  data:
+    prefix_sampling_prob: 0.0

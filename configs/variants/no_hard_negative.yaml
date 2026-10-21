@@ -1,0 +1,3 @@
+train:
+  data:
+    hard_negative_prob: 0.0

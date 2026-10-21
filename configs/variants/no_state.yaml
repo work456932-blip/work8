@@ -1,0 +1,8 @@
+model:
+  survival_head:
+    enable_state: false
+train:
+  survival:
+    components:
+      state: 0.0
+      monotonic: 0.0

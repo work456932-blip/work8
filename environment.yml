@@ -1,0 +1,14 @@
+name: survvtg
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.3.1
+  - torchvision=0.18.1
+  - torchtext=0.18.0
+  - pytorch-cuda=12.1
+  - pip:
+      - -r requirements.txt

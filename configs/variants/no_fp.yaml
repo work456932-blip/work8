@@ -1,0 +1,4 @@
+model:
+  future_prediction: false
+train:
+  future_loss_weight: 0.0

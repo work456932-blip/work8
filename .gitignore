@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+data/
+results/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.npy
+*.zip
+benchmark.json
+.DS_Store

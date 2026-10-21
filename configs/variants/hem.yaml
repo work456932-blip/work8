@@ -1,0 +1,12 @@
+model:
+  variant: hem
+  survival_head: null
+train:
+  survival:
+    enabled: false
+  data:
+    prefix_sampling_prob: 0.0
+    hard_negative_prob: 0.0
+eval:
+  cure_gate: false
+  explicit_refusal: false

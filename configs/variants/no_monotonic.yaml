@@ -1,0 +1,4 @@
+train:
+  survival:
+    components:
+      monotonic: 0.0

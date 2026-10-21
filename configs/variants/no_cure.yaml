@@ -1,0 +1,10 @@
+model:
+  survival_head:
+    enable_cure: false
+train:
+  survival:
+    components:
+      cure: 0.0
+eval:
+  cure_gate: false
+  explicit_refusal: false

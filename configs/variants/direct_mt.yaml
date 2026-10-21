@@ -1,0 +1,5 @@
+model:
+  variant: direct_mt
+train:
+  survival:
+    boundary_objective: direct
