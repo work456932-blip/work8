@@ -110,9 +110,11 @@ class Evaluator:
         score, standard_metrics = self.calc_metric(
             all_results, all_targets, all_relevance, use_future=False
         )
-        _, future_metrics = self.calc_metric(
-            all_results, all_targets, all_relevance, use_future=True
-        )
+        future_metrics = None
+        if self.model.enable_future_branch:
+            _, future_metrics = self.calc_metric(
+                all_results, all_targets, all_relevance, use_future=True
+            )
         survival_metrics = compute_survival_metrics(all_results)
         if is_main_process():
             metrics = {

@@ -541,6 +541,6 @@ def make_dataloader(
         shuffle=(sampler is None and is_training),
         drop_last=is_training,
         generator=generator,
-        persistent_workers=True if num_workers > 0 else False,
+        persistent_workers=False,  # workers must receive the new dataset.epoch each epoch
     )
     return loader, sampler
